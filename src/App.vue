@@ -14,21 +14,20 @@ import AttributeItem from './components/AttributeItem.vue'
           <p>You scored higher than 65% of the people who have taken these tests.</p>
         </div>
       </div>
-    </div>
+      <div class="summary">
+        <h1 class="title">Summary</h1>
 
-    <div class="summary">
-      <h1 class="title">Summary</h1>
+        <div class="l-flex">
+          <AttributeItem />
+          <AttributeItem />
+          <AttributeItem />
+          <AttributeItem />
+        </div>
 
-      <div class="l-flex">
-        <AttributeItem />
-        <AttributeItem />
-        <AttributeItem />
-        <AttributeItem />
+        <button class="button">Continue</button>
       </div>
-
-      <button class="button">Continue</button>
     </div>
   </main>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
