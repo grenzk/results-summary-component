@@ -14,6 +14,7 @@ import AttributeItem from './components/AttributeItem.vue'
           <p>You scored higher than 65% of the people who have taken these tests.</p>
         </div>
       </div>
+
       <div class="summary">
         <h1 class="title">Summary</h1>
 
