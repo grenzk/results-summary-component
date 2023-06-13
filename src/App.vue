@@ -7,7 +7,7 @@ import AttributeItem from './components/AttributeItem.vue'
     <div class="card">
       <div class="results">
         <h1 class="title">Your Result</h1>
-        
+
         <p class="score"><span>76</span>of 100</p>
 
         <div class="l-flex">
@@ -32,4 +32,20 @@ import AttributeItem from './components/AttributeItem.vue'
   </main>
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+.card {
+  display: flex;
+  max-width: 46rem;
+  flex-direction: column;
+}
+
+.results {
+  background: var(--background-color);
+  color: hsl(var(--neutral-white), 0.7);
+  text-align: center;
+  padding: 2.5rem calc(2.5rem * 1.5);
+  border-radius: 0 0 2rem 2rem;
+
+  
+}
+</style>
