@@ -1,0 +1,39 @@
+:root {
+  --primary-light-red: 0, 100%, 67%;
+  --primary-orangey-yellow: 39, 100%, 56%;
+  --primary-green-teal: 166, 100%, 37%;
+  --primary-cobalt-blue: 234, 85%, 45%;
+
+  --neutral-white: 0, 0%, 100%;
+  --neutral-pale-blue: 221, 100%, 96%;
+  --neutral-light-lavender: 241, 100%, 89%;
+  --neutral-dark-gray-blue: 224, 30%, 27%;
+
+  --gradient-light-slate-blue: 252, 100%, 67%;
+  --gradient-royal-blue: 241, 81%, 54%;
+  --gradient-violet-blue: 256, 72%, 46%, 1;
+  --gradient-persian-blue: 241, 72%, 46%, 0;
+
+  --background-color: linear-gradient(
+    hsl(var(--gradient-light-slate-blue)),
+    hsl(var(--gradient-royal-blue))
+  );
+
+  --circle-color: linear-gradient(
+    hsl(var(--gradient-violet-blue)),
+    hsl(var(--gradient-persian-blue))
+  );
+
+  --body-font: 'HankenGrotesk', sans-serif;
+
+  --biggest-font-size: 5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --medium-font-size: 1.25rem;
+  --normal-font-size: 1.125rem;
+
+  --font-extra-bold: 800;
+  --font-bold: 700;
+  --font-medium: 500;
+}
