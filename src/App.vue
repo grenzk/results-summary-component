@@ -7,6 +7,7 @@ import AttributeItem from './components/AttributeItem.vue'
     <div class="card">
       <div class="results">
         <h1 class="title">Your Result</h1>
+        
         <p class="score"><span>76</span>of 100</p>
 
         <div class="l-flex">
