@@ -16,7 +16,7 @@ import AttributeItem from './components/AttributeItem.vue'
         </div>
       </div>
 
-      <div class="summary">
+      <div class="summary l-flex has-large-space">
         <h1 class="title">Summary</h1>
 
         <div class="l-flex">
@@ -75,5 +75,62 @@ import AttributeItem from './components/AttributeItem.vue'
 .title {
   font-weight: var(--font-bold);
   font-size: var(--h3-font-size);
+}
+
+.summary {
+  padding: 2.5rem;
+
+  .attribute-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(var(--attribute-item-color), 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    svg {
+      stroke: hsl(var(--attribute-item-color));
+    }
+
+    .name {
+      color: hsl(var(--attribute-item-color));
+    }
+  }
+
+  .attribute-item.is-light-red {
+    --attribute-item-color: var(--primary-light-red);
+  }
+  .attribute-item.is-orangey-yellow {
+    --attribute-item-color: var(--primary-orangey-yellow);
+  }
+  .attribute-item.is-green-teal {
+    --attribute-item-color: var(--primary-green-teal);
+  }
+  .attribute-item.is-cobalt-blue {
+    --attribute-item-color: var(--primary-cobalt-blue);
+  }
+
+  .rating {
+    color: hsl(var(--neutral-dark-gray-blue), 0.5);
+    font-weight: var(--font-extra-bold);
+
+    span {
+      color: hsl(var(--neutral-dark-gray-blue));
+    }
+  }
+
+  .button {
+    color: hsl(var(--neutral-white));
+    background: hsl(var(--neutral-dark-gray-blue));
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 100vw;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--background-color);
+    }
+  }
 }
 </style>

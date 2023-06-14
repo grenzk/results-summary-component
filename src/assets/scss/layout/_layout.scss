@@ -4,6 +4,13 @@
   row-gap: 1rem;
 }
 
+.l-inline {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .has-large-space {
   row-gap: 2rem;
 }
