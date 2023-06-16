@@ -20,13 +20,15 @@ import { AttributeItem } from '@/components'
       <div class="summary l-flex has-large-space">
         <h1 class="title">Summary</h1>
 
-        <div v-for="(item, index) in attributeData" class="l-flex" :key="index">
-          <AttributeItem
-            :name="item.category"
-            :color="item.color"
-            :rating="item.score"
-            :icon-name="item.icon"
-          />
+        <div class="l-flex">
+          <template v-for="(item, index) in attributeData" :key="index">
+            <AttributeItem
+              :name="item.category"
+              :color="item.color"
+              :rating="item.score"
+              :icon-name="item.icon"
+            />
+          </template>
         </div>
 
         <button class="button">Continue</button>

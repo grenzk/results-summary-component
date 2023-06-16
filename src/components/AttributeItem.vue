@@ -22,16 +22,13 @@ defineProps({
 </script>
 
 <template>
-  <div class="l-flex">
-    <div :class="`attribute-item ${color}`">
-      <div class="l-inline">
-        <AttributeIcon :name="iconName" />
-        <h3 class="name">{{ name }}</h3>
-      </div>
-      <p class="rating">
-        <span>{{ rating }}</span> / 100
-      </p>
+  <div :class="`attribute-item ${color}`">
+    <div class="l-inline">
+      <AttributeIcon :name="iconName" />
+      <h3 class="name">{{ name }}</h3>
     </div>
+    <p class="rating">
+      <span>{{ rating }}</span> / 100
+    </p>
   </div>
-  <template />
 </template>
