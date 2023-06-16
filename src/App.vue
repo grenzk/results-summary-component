@@ -21,7 +21,7 @@ import { AttributeItem } from '@/components'
         <h1 class="title">Summary</h1>
 
         <div class="l-flex">
-          <template v-for="(item, index) in attributeData" :key="index">
+          <template v-for="item in attributeData" :key="item.id">
             <AttributeItem
               :name="item.category"
               :color="item.color"
