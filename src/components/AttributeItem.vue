@@ -25,7 +25,7 @@ defineProps({
   <div :class="`attribute-item ${color}`">
     <div class="l-inline">
       <AttributeIcon :name="iconName" />
-      <h3 class="name">{{ name }}</h3>
+      <p class="name">{{ name }}</p>
     </div>
     <p class="rating">
       <span>{{ rating }}</span> / 100
