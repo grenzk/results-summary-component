@@ -1,5 +1,6 @@
 <script setup>
-import AttributeItem from './components/AttributeItem.vue'
+import attributeData from '@/data.json'
+import { AttributeItem } from '@/components'
 </script>
 
 <template>
@@ -19,11 +20,13 @@ import AttributeItem from './components/AttributeItem.vue'
       <div class="summary l-flex has-large-space">
         <h1 class="title">Summary</h1>
 
-        <div class="l-flex">
-          <AttributeItem />
-          <AttributeItem />
-          <AttributeItem />
-          <AttributeItem />
+        <div v-for="(item, index) in attributeData" class="l-flex" :key="index">
+          <AttributeItem
+            :name="item.category"
+            :color="item.color"
+            :rating="item.score"
+            :icon-name="item.icon"
+          />
         </div>
 
         <button class="button">Continue</button>
@@ -88,12 +91,9 @@ import AttributeItem from './components/AttributeItem.vue'
     padding: 1rem;
     border-radius: 0.5rem;
 
-    svg {
-      stroke: hsl(var(--attribute-item-color));
-    }
-
     .name {
       color: hsl(var(--attribute-item-color));
+      font-weight: var(--font-bold);
     }
   }
 
