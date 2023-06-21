@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/grenzk/results-summary-component]
-- Live Site URL: [https://grenzk.github.io/results-summary-component/]
+- Solution URL: https://github.com/grenzk/results-summary-component
+- Live Site URL: https://grenzk.github.io/results-summary-component/
 
 ## My process
 
